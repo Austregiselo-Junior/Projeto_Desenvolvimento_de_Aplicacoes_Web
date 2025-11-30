@@ -1,17 +1,17 @@
-import { Component } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms'; 
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { Router, RouterModule } from '@angular/router';
 
 
 @Component({
-  selector: 'app-login-box',
-  templateUrl: './login-box-component.html',
-  styleUrls: ['./login-box-component.css'],
-  imports: [FormsModule, CommonModule, RouterModule]
+  selector: 'app-cadastro-box',
+  imports: [FormsModule, CommonModule, RouterModule],
+  templateUrl: './cadastro-box.component.html',
+  styleUrl: './cadastro-box.component.css',
 })
-export class LoginBoxComponent {
-  username: string = '';
+export class CadastroBoxComponent {
+username: string = '';
   password: string = '';
   loginError: boolean = false;
 
@@ -35,6 +35,4 @@ export class LoginBoxComponent {
     this.router.navigate(['/land']);
   }
 }
-
-
 

@@ -4,11 +4,11 @@ import { CommonModule } from '@angular/common';
 import { AddPacienteModalComponent } from '../add-paciente-modal.component/add-paciente-modal.component';
 import { EditPacientModalComponent } from '../edit-pacient-modal.component/edit-pacient-modal.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home-component',
-  imports: [CommonModule, AddPacienteModalComponent, EditPacientModalComponent],
+  imports: [CommonModule, AddPacienteModalComponent, EditPacientModalComponent, RouterModule],
   templateUrl: './home-component.html',
   styleUrl: './home-component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

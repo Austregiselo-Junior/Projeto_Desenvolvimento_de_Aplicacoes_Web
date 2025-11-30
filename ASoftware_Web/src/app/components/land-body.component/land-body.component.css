@@ -39,3 +39,23 @@
 	.hero-right h1{font-size:2rem;text-align:center}
 }
 
+.login-btn {
+	padding: 5px 50px;
+	margin: 0px 0px 0px 0px;
+	background: linear-gradient(to right, #1c3b5f, #5ba7d1);
+	border: none;
+	border-radius: 6px;
+	color: white;
+	font-weight: 500;
+	font-size: 15px;
+	cursor: pointer;
+	display: block;
+	width: max-content;
+	transition: 0.2s;
+}
+
+/* Coloca o segundo botão abaixo do primeiro com espaçamento */
+.hero-right .login-btn + .login-btn {
+	margin-top: 12px;
+}
+

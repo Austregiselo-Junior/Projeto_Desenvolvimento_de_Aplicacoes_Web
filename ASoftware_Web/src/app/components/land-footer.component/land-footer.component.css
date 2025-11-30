@@ -5,8 +5,8 @@
 .land-footer{
 	padding: 28px 48px;
 	display:flex;
-	justify-content:center;
-	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	justify-content:space-between;
+
 
 	position: fixed;
 		bottom: 0;
@@ -25,9 +25,18 @@
 		align-items: center;
 }
 
+.brand {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
 
-
-
-
-
+.about-us {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px;
+  cursor: pointer;
+}
 
