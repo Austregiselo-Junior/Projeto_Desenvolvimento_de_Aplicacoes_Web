@@ -13,17 +13,14 @@ import { Router, RouterModule } from '@angular/router';
 export class CadastroBoxComponent {
 username: string = '';
   password: string = '';
+  confirmPassword: string = '';
   loginError: boolean = false;
 
   constructor(private router: Router) {
 }
 
-  login() {
-    // Credenciais válidas (exemplo)
-    const validUsername = 'adm';
-    const validPassword = '123';
-
-    if (this.username === validUsername && this.password === validPassword) {
+  cadastrar() {
+    if (this.password === this.confirmPassword) {
       this.router.navigate(['/home']);
       this.loginError = false; 
     } else {
